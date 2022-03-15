@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: url("/css/img/pexels-mikhail-nilov-8435972.mp4");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+html {
+  --color-one: #146356;
+  --color-two: #464e2e;
+  --color-three: #966c3b;
+  --color-four: #876445;
+}
+
+.almar {
+  display: flex;
+  color: white;
+}
+
+.almar-intro {
+  flex: 1;
+}
+
+.almar-intro h1 {
+  font-weight: 500;
+  padding: 20px;
+  font-size: 40px;
+  color: white;
+}
+
+nav {
+  flex: 1;
+}
+
+.almar-links ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.almar-links li {
+  padding: 40px 15px 0px 15px;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.almar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes button-animation {
+  0% {
+    background-color: var(--color-four);
+  }
+
+  50% {
+    background-color: var(--color-one);
+  }
+
+  100% {
+    background-color: var(--color-four);
+  }
+}
+
+.link-button {
+  background-color: var(--color-four);
+  padding: 13px;
+  border-radius: 50px;
+}
+
+.animated a:hover {
+  animation-name: button-animation;
+  animation-duration: 3s;
+}
+
+.happiness {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.happiness-text {
+  flex: 1;
+}
+
+.happiness-text h2 {
+  font-size: 120px;
+  text-align: center;
+  color: white;
+}
+
+.happiness a {
+  color: white;
+}
+
+@keyframes rainbow-button {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+
+  35% {
+    background-color: rgb(160, 160, 0);
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  75% {
+    background-color: blue;
+  }
+
+  85% {
+    background-color: indigo;
+  }
+
+  100% {
+    background-color: violet;
+  }
+}
+
+.happiness-button {
+  flex: 1;
+  margin: auto;
+  margin-top: 70px;
+  position: relative;
+  right: 20px;
+}
+
+.happiness-button a {
+  background-color: var(--color-one);
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.happiness-button a:hover {
+  animation-name: rainbow-button;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 1200px) {
+  .invest {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .improve {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.invest {
+  background-color: var(--color-four);
+  display: flex;
+  padding: 30px;
+}
+
+.invest-photo {
+  flex: 1;
+  position: relative;
+  left: 250px;
+}
+
+.invest-photo img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.invest-text {
+  flex: 1;
+  padding: 30px;
+  color: white;
+}
+
+.invest-text h3 {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.invest-text p {
+  font-size: 25px;
+  font-weight: 200;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.invest-text a {
+  background-color: var(--color-one);
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.invest-text a:hover {
+  animation-name: rainbow-button;
+  animation-duration: 3s;
+}
+
+.improve {
+  background-color: var(--color-four);
+  display: flex;
+  padding: 30px;
+}
+
+.improve-photo {
+  flex: 1;
+  position: relative;
+  left: 250px;
+}
+
+.improve-photo img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.improve-text {
+  flex: 1;
+  padding: 30px;
+  color: white;
+}
+
+.improve-text h3 {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.improve-text p {
+  font-size: 25px;
+  font-weight: 200;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.improve-text a {
+  background-color: var(--color-one);
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.improve-text a:hover {
+  animation-name: rainbow-button;
+  animation-duration: 3s;
+}
+
+.quote {
+  padding-top: 80px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.quote h4 {
+  font-size: 60px;
+  font-weight: 500;
+  padding-bottom: 13px;
+}
+
+.quote p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.session {
+  background-image: url("/css/img/secondImage.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.session-text {
+  flex: 1;
+  color: white;
+}
+
+.session-text h4 {
+  font-size: 90px;
+  padding: 30px;
+  margin-top: 120px;
+}
+
+.session-text p {
+  font-size: 15px;
+}
+
+.session-button {
+  flex: 1;
+  margin-top: 500px;
+}
+
+.session-button a {
+  background-color: var(--color-one);
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.session-button a:hover {
+  animation-name: rainbow-button;
+  animation-duration: 3s;
+}
+
+.newsletter {
+  background-color: var(--color-four);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.newsletter-text {
+  flex: 1;
+  color: white;
+}
+
+.newsletter-text h5 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.newsletter-text p {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.newsletter-form {
+  flex: 1;
+  color: white;
+}
+
+.newsletter-form input {
+  padding: 15px;
+  border: none;
+}
+
+.newsletter-form button {
+  padding: 15px;
+  background-color: white;
+  border: none;
+  margin-top: 18px;
+  position: relative;
+  left: 322px;
+  margin-bottom: 15px;
+}
+
+.newsletter-form p {
+  font-size: 10px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding: 80px;
+}
+
+.almar-footer {
+  flex: 3;
+}
+
+.almar-footer h6 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.almar-footer p {
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-weight: 200;
+  color: rgb(139, 139, 139);
+}
+
+@keyframes rainbow-text {
+  0% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+
+  35% {
+    color: rgb(160, 160, 0);
+  }
+
+  50% {
+    color: green;
+  }
+
+  75% {
+    color: blue;
+  }
+
+  85% {
+    color: indigo;
+  }
+
+  100% {
+    color: violet;
+  }
+}
+
+.power {
+  animation-name: rainbow-text;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.almar-explore {
+  flex: 1;
+}
+
+.almar-explore h6 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.almar-explore ul {
+  list-style-type: none;
+}
+
+.almar-explore a {
+  color: rgb(139, 139, 139);
+  text-decoration: none;
+}
+
+.almar-explore a:hover {
+  color: white;
+}
+
+.almar-follow {
+  flex: 1;
+}
+
+.almar-follow h6 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.almar-follow ul {
+  list-style-type: none;
+}
+
+.almar-follow a {
+  color: rgb(139, 139, 139);
+  text-decoration: none;
+}
+
+.almar-follow a:hover {
+  color: white;
+}
+
+.almar-legal {
+  flex: 1;
+}
+
+.almar-legal h6 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.almar-legal ul {
+  list-style-type: none;
+}
+
+.almar-legal a {
+  color: rgb(139, 139, 139);
+  text-decoration: none;
+}
+
+.almar-legal a:hover {
+  color: white;
+}
