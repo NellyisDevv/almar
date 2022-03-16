@@ -284,7 +284,7 @@ nav {
 }
 
 .session {
-  background-image: url("css/img/mediumphoto.jpg");
+  background-image: url(./img/mediumphoto.jpg);
   width: 100%;
   height: 100vh;
   background-position: center;
