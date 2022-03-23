@@ -369,9 +369,12 @@ nav {
   background-color: white;
   border: none;
   margin-top: 18px;
-  position: relative;
-  left: 322px;
   margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.form-button-center {
+  position: center;
 }
 
 .newsletter-form p {
